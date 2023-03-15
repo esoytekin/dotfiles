@@ -1,0 +1,101 @@
+{
+  "go.toolsManagement.autoUpdate": true,
+  "vim.easymotion": true,
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.leader": ",",
+  "vim.camelCaseMotion.enable": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [":"],
+      "commands": ["vim.showQuickpickCmdLine"]
+    },
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    },
+    {
+      "before": ["t", "k"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["t", "j"],
+      "after": ["g", "T"]
+    },
+    {
+      "before": ["g", "]"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["<C-i>"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["<C-o>"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "git.autofetch": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "code-runner.runInTerminal": true,
+  "eslint.alwaysShowStatus": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "redhat.telemetry.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "Menlo for Powerline",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "vim.foldfix": true,
+  "editor.wordWrap": "off",
+  "window.commandCenter": true,
+  "explorer.openEditors.visible": 0,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.snippetSuggestions": "inline",
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "editor.accessibilitySupport": "off"
+}
+

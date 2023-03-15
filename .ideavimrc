@@ -1,0 +1,33 @@
+imap jj <Esc>
+nmap g] :action GotoImplementation<CR>
+nmap g[ :action GotoSuperMethod<CR>
+set surround " enables surround vim
+set multiple-cursors " enables vim-multiple-cursor
+set easymotion
+nmap tj :action PreviousTab<CR>
+nmap tk :action NextTab<CR>
+nmap <C-o> :action Back<CR>
+nmap <C-i> :action Forward<CR>
+nmap ,pp :action ParameterInfo<CR>
+imap <C-;> :action ParameterInfo<CR>i
+nmap <C-,> :action GotoNextError<CR>
+nmap <C-S-,> :action GotoPreviousError<CR>
+nmap <C-p> :action SearchEverywhere<CR>
+set ic
+nmap zm :action HideAllWindows<CR>
+nmap <C-l> :action RecentFiles<CR>
+nmap <C-S-o> :action FileStructurePopup<CR>
+set incsearch
+set hlsearch
+nmap <Space> :noh<CR>
+set visualbell
+set noerrorbells
+set nu
+set ideajoinset clipboard+=ideaputset ideajoin
+
+" Press `f` to activate AceJump
+"map f :action AceAction<CR>
+" Press `F` to activate Target Mode
+"map F :action AceTargetAction<CR>
+" Press `g` to activate Line Mode
+"map g :action AceLineAction<CR>
